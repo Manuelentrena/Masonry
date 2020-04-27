@@ -1,0 +1,63 @@
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+.body {
+  padding: 0px;
+  margin: 0px;
+}
+.cabezera {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Sans Unicode";
+  font-weight: 600;
+  padding: 30px 0px;
+  /* Para poner degradado al texto de la cabezera */
+  background: linear-gradient(to right, yellow, blue);
+  background-clip: text;
+  color: transparent;
+}
+/* Hemos metido el grid en otro div para limitar su ancho usando el auto fill */
+.cuerpo {
+  max-width: 1215px; /* El tamaño justo para 4 columnas */
+  /* display: block; */
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 5px;
+  justify-content: center;
+}
+.item {
+  border-radius: 5px;
+  background: #e4e4e4;
+  padding: 20px;
+}
+
+.item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.level-1 {
+  grid-row-end: span 1;
+}
+
+.level-2 {
+  grid-row-end: span 2;
+}
+
+.level-3 {
+  grid-row-end: span 3;
+}
+
+.level-4 {
+  grid-row-end: span 4;
+}
+
+.level-5 {
+  grid-row-end: span 5;
+}
