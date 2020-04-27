@@ -13,7 +13,7 @@
   font-weight: 600;
   padding: 30px 0px;
   /* Para poner degradado al texto de la cabezera */
-  background: -webkit-linear-gradient(to right, yellow, blue);
+  background: linear-gradient(to right, yellow, blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
